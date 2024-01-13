@@ -1,0 +1,213 @@
+@-moz-document url-prefix("https://www.gamedevteacher.fr/view/courses/creajv-pro") {
+    /* Header */
+    #page_header {
+      position: fixed;
+      top: 0px;
+      width: 100vw;
+      z-index: 50;
+    }
+    #page_header header{
+      display:flex;
+      justify-content:center;
+    }
+    #page_header header>div:nth-of-type(n + 2){
+      position:fixed;
+      right:0;
+      margin-right:20px; 
+    }
+    #page_header header>nav{
+      display:none;
+    }
+    
+    /*Footer*/
+    #page_footer {
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
+      height: 50px;
+      z-index: 50;
+    }
+    #page_footer div {
+      padding: 0 !important;
+    }
+    #page_footer footer > div,
+    nav {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    #page_footer footer {
+      height: 50px !important;
+      display: flex;
+      align-items: center;
+    }
+    #page_footer ul {
+      display: flex;
+      width: 500px;
+    }
+    
+    #customer-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-left: 20px;
+      z-index: 51;
+      height: 100%;
+      width: 400px;
+      background-color: rgb(49, 69, 85);
+      border-right: 1px solid rgb(54, 88, 115);
+      overflow:auto;
+    }
+    #customer-sidebar header .h4 a, span {
+      color: #fff !important;
+    }
+    #customer-sidebar nav a>h2{
+      color: var(--podia-creator-brand-color) !important;
+    }
+    #customer-sidebar ol.sticky-contents>li:first-child{
+      position: sticky;
+      padding-top:20px;
+      border-radius: 0 !important;
+      top:0;
+      z-index: 999;
+      background-color: rgb(49, 69, 85);
+    }
+    #customer-sidebar .list-group-item-completed .list-group-icon{
+      background-color: var(--podia-creator-brand-color) !important;
+    }
+    #customer-sidebar .list-group-item-completed .list-group-icon svg{
+      stroke: var(--podia-creator-brand-color-hover) !important;
+    }
+    /* search bar*/
+    #customer-sidebar #search-section{
+      margin: 10px 0 10px 0;
+    }
+    #customer-sidebar #search-section .search-input{
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+    }
+    #customer-sidebar .highlighted-link{
+      background-color: var(--podia-creator-brand-color) !important;
+    }
+    
+    /*main content*/
+    .main-content {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      padding-left: 420px;
+      padding-top: 132px;
+      padding-bottom: 51px;
+      overflow-y: auto;
+    }
+    .main-content > div{
+      max-width: calc(100vw - 440px) !important;
+      width: calc(100vw - 440px) !important;
+    }
+    
+    .main-content>div:first-child{
+      position: sticky;
+      top:0;
+      padding-top:20px;
+      background-color: #fff;
+      z-index:50;
+      border-bottom:1px solid #cecece;
+      margin-bottom: 10px;
+    }
+    .main-content #lesson-header .spacer-section{
+      margin-bottom: 5px !important;
+    }
+    .main-content #lesson-header button{
+      display: none;
+    }
+    .main-content #lesson-content a>span{
+      color: #19874b !important;
+    }
+    
+    .main-content #lesson-navigation{
+      position: fixed;
+      top: 132px;
+      height: 80px;
+      z-index: 55;
+      display:flex;
+      justify-content: end;
+      align-items: center;
+      width: 300px !important;
+      right: 0;
+      padding-right: 20px;
+    }
+    .main-content #lesson-navigation #completion-button a.btn-dark{
+      background-color: var(--podia-creator-brand-color-hover) !important;
+    }
+    .main-content #lesson-navigation #completion-button a.btn-dark:hover{
+      background-color: var(--podia-creator-brand-color) !important;
+    }
+    .main-content #lesson-navigation #completion-button a.btn-secondary span{
+      color: var(--podia-creator-brand-color-hover) !important;
+    }
+    .main-content #lesson-navigation #completion-button a.btn-secondary svg{
+      fill: var(--podia-creator-brand-color-hover) !important;
+    }
+    .main-content #lesson-navigation #completion-button a.btn-dark svg{
+      fill: #fff !important;
+    }
+    
+    
+    .main-content .card-container .card-body{
+      background-color: #f5f6f7;
+    }
+    .main-content .card-container .card-body header{
+      position:sticky;
+      top: 107px;
+      z-index:49;
+      background-color: #f5f6f7;
+    }
+    .main-content .card-container .card-body h2{
+      color: var(--podia-creator-brand-color-hover) !important;
+    }
+    .main-content .card-container .card-body .list-group-item-completed .list-group-icon svg{
+      stroke: var(--podia-creator-brand-color-hover) !important;
+    }
+    
+    /* Video player */
+    #lesson-content{
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    .wistia_embed{
+      display:flex;
+      justify-content: center;
+    }
+    
+    /* comments */
+    #lesson-comments{
+      padding-bottom:60px;
+    }
+    #lesson-comments #comments div.btn-row-left a>span{
+      color: var(--podia-creator-brand-color) !important;
+    }
+    #lesson-comments #comments div.btn-row-left a:hover{
+      color: #fff !important;
+      background-color: var(--podia-creator-brand-color-hover) !important;
+    }
+    #lesson-comments #comments div.btn-row-left a:hover>span{
+      color: #fff !important;
+    }
+    #lesson-comments #comments a.btn-transparent-secondary{
+      color: #fff !important;
+      background-color: var(--podia-creator-brand-color) !important;
+    }
+    #lesson-comments #comments a:hover.btn-transparent-secondary{
+      color: #fff !important;
+      background-color: var(--podia-creator-brand-color-hover) !important;
+    }
+    #lesson-comments #comments #top_level_reply_button a>span{
+        color: var(--podia-creator-brand-color) !important;
+    }
+    #lesson-comments #comments #top_level_reply_button a:hover>span{
+        color: var(--podia-creator-brand-color-hover) !important;
+    }
+    }
